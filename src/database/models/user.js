@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey:'user_id',
         as:"orders"
       })
-      User.belongTo(models.Adress);
+      User.belongsTo(models.Adress);
     }
   };
   User.init({

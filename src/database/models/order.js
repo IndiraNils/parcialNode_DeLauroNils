@@ -19,10 +19,10 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey:'shipping_id',
         as: "shippings"
       })
-      Orders.belongTo(models.State);
-      Orders.belongTo(models.Payment);
-      Orders.belongTo(models.User);
-      Orders.belongTo(models.Address);
+      Orders.belongsTo(models.State);
+      Orders.belongsTo(models.Payment);
+      Orders.belongsTo(models.User);
+      Orders.belongsTo(models.Address);
 
     }
   };
